@@ -1,4 +1,5 @@
-function removeVowels(word) {
+
+module.exports = function (word) {
   var characters = word.split("");
 
   var result = [];
@@ -20,12 +21,12 @@ function removeVowels(word) {
   return result.join("");
 }
 
-module.exports = removeVowels;
+
 
 /*
   Let's trace this piece of code - what is the value of result with this input
 
   var result = removeVowels('samuel');
-
+  expected :  _a_ue_
   what is the value of result?
 */
